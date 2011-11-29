@@ -14,10 +14,10 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "spark.rb"
+  gem.name = "spark_rb"
   gem.homepage = "http://github.com/PJK/spark"
   gem.license = "MIT"
-  gem.summary = %Q{Ruby "port" of holman's spark}
+  gem.summary = %Q{Spark.rb - a Ruby "port" of holman's spark}
   gem.description = %Q{Ruby "port" of holman's spark. For the sake of Rubygems packaging & better integration}
   gem.email = "me@pavelkalvoda.com"
   gem.authors = ["Pavel Kalvoda"]
