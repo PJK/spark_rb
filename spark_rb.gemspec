@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Pavel Kalvoda"]
   s.date = "2011-11-29"
-  s.description = "Ruby \"port\" of holman's spark. For the sake of Rubygems packaging & better integration"
+  s.description = "Ruby \"port\" of Zach Holman's Spark. For the sake of Rubygems packaging & better integration"
   s.email = "me@pavelkalvoda.com"
   s.executables = ["sparkdraw"]
   s.extra_rdoc_files = [
@@ -26,10 +26,11 @@ Gem::Specification.new do |s|
     "VERSION",
     "bin/sparkdraw",
     "lib/spark.rb",
+    "spark_rb.gemspec",
     "test/helper.rb",
     "test/test_spark.rb"
   ]
-  s.homepage = "http://github.com/PJK/spark"
+  s.homepage = "http://github.com/PJK/spark_rb"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
