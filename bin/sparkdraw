@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# (just in case...)
+
+$:.unshift(File.expand_path(File.join(File.dirname(__FILE__),'../lib')))
+
+require 'spark'
+
+if ARGV.length > 0 then
+  # Parameters, accept both spaces and commas as separators
+  args = ARGV[0].include?(',') ?  ARGV[0].split(',') : ARGV
+else
+  # STDIN string (piping, files, etc..)
+  args =  STDIN.read.strip.split(/ |,/)
+end
+
+puts Spark.draw(*args.map(&:to_i))

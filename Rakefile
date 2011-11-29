@@ -14,13 +14,14 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "spark"
+  gem.name = "spark.rb"
   gem.homepage = "http://github.com/PJK/spark"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ruby "port" of holman's spark}
+  gem.description = %Q{Ruby "port" of holman's spark. For the sake of Rubygems packaging & better integration}
   gem.email = "me@pavelkalvoda.com"
   gem.authors = ["Pavel Kalvoda"]
+  gem.executables = ['sparkdraw']
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
