@@ -15,10 +15,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "spark_rb"
-  gem.homepage = "http://github.com/PJK/spark"
+  gem.homepage = "http://github.com/PJK/spark_rb"
   gem.license = "MIT"
   gem.summary = %Q{Spark.rb - a Ruby "port" of holman's spark}
-  gem.description = %Q{Ruby "port" of holman's spark. For the sake of Rubygems packaging & better integration}
+  gem.description = %Q{Ruby "port" of Zach Holman's Spark. For the sake of Rubygems packaging & better integration}
   gem.email = "me@pavelkalvoda.com"
   gem.authors = ["Pavel Kalvoda"]
   gem.executables = ['sparkdraw']
