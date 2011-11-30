@@ -10,7 +10,7 @@ if ARGV.length > 0 then
   args = ARGV[0].include?(',') ?  ARGV[0].split(',') : ARGV
 else
   # STDIN string (piping, files, etc..)
-  args =  STDIN.read.strip.split(/ |,/)
+  args =  STDIN.read.strip.split(/,|\s/)
 end
 
 puts Spark.draw(*args.map(&:to_i))
