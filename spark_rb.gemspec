@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "spark_rb"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Pavel Kalvoda"]
-  s.date = "2011-11-29"
+  s.date = "2011-11-30"
   s.description = "Ruby \"port\" of Zach Holman's Spark. For the sake of Rubygems packaging & better integration"
   s.email = "me@pavelkalvoda.com"
   s.executables = ["sparkdraw"]
