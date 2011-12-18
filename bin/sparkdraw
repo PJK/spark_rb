@@ -1,11 +1,35 @@
 #!/usr/bin/env ruby
+# encoding: utf-8
 # (just in case...)
 
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__),'../lib')))
 
 require 'spark'
 
+Help = <<-HELP
+A text graphing utility
+USAGE:
+  sparkdraw VALUE1, VALUE2, ..., VALUEx
+OPTIONS:
+  -h, --help   display help text and exit
+EXAMPLES:
+  sparkdraw 4,6,8,7,3
+  ▂▅█▆▁
+
+  sparkdraw 2 4 8 16 32 64 128
+  ▁▁▁▁▂▄█
+
+  echo 2 4 8 16 32 64 128 | sparkdraw
+  ▁▁▁▁▂▄█
+HELP
+
+def show_help
+  puts Help
+  exit
+end
+
 if ARGV.length > 0 then
+show_help if ['-h', '--help'].include? ARGV[0]  
   # Parameters, accept both spaces and commas as separators
   args = ARGV[0].include?(',') ?  ARGV[0].split(',') : ARGV
 else
