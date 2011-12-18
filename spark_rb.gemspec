@@ -5,23 +5,23 @@
 
 Gem::Specification.new do |s|
   s.name = "spark_rb"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Pavel Kalvoda"]
-  s.date = "2011-11-30"
+  s.date = "2011-12-18"
   s.description = "Ruby \"port\" of Zach Holman's Spark. For the sake of Rubygems packaging & better integration"
   s.email = "me@pavelkalvoda.com"
   s.executables = ["sparkdraw"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "bin/sparkdraw",
