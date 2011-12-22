@@ -31,8 +31,8 @@ end
 if ARGV.length > 0 then
   show_help if ['-h', '--help'].include? ARGV[0]  
   # Parameters, accept both spaces and commas as separators
-  if ARGV[0].include?(',') then
-    show_help unless ARGV[0][/^(\d+[,])*\d+$/] && ARGV.length == 1
+  if ARGV.length == 1 then
+    show_help unless ARGV[0][/^(\d+[,])*\d+$/]
     args = ARGV[0].split(',')
   else
     args = ARGV
