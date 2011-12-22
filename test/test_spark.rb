@@ -13,4 +13,8 @@ class TestSpark < Test::Unit::TestCase
   	assert_equal '▁▁▁▁▂▄█', `echo 2 4 8 16 32 64 128 | ./bin/sparkdraw`.strip
   end
 
+  def test_it_fails
+  	assert_equal false, system("./bin/sparkdraw dadadasd")
+  end
+
 end

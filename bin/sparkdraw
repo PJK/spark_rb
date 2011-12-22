@@ -23,13 +23,13 @@ EXAMPLES:
   ▁▁▁▁▂▄█
 HELP
 
-def show_help
+def show_help(status = 1)
   puts Help
-  exit
+  exit(status)
 end
 
 if ARGV.length > 0 then
-  show_help if ['-h', '--help'].include? ARGV[0]  
+  show_help(0) if ['-h', '--help'].include? ARGV[0]  
   # Parameters, accept both spaces and commas as separators
   if ARGV.length == 1 then
     show_help unless ARGV[0][/^(\d+[,])*\d+$/]
