@@ -9,5 +9,8 @@ class TestSpark < Test::Unit::TestCase
     assert_equal '▁▁▁▁█▁▁', Spark.draw(0, 0, 0, 0, 500, 1, 50)
   end
 
+  def test_it_accepts_stdin_input
+  	assert_equal '▁▁▁▁▂▄█', `echo 2 4 8 16 32 64 128 | ./bin/sparkdraw`.strip
+  end
 
 end
